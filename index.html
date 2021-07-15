@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Tools</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+</head>
+
+  <body>
+    <div class="game">
+      <div class="game-greeting">
+        <h1>Let's play</h1>
+        <p>Scissors beats a paper</p>
+        <p>Paper beats rock</p>
+        <p>Rock beats scissors</p>
+        <p>And we play up to three wins!</p>
+        
+      </div>
+      <div class="game-wrapper">
+        <div class="game-field">
+          <h2>Choose</h2>
+          <input type="image" src="./img/stone.png" height="125" id="rock" class="buttonChoice" alt="Rock">
+          <input type="image" src="./img/paper.png" id="paper" height="125" class="buttonChoice" alt="Paper">
+          <input type="image" src="./img/scissors.png" id="scissors" height="125" class="buttonChoice" alt="Scissors">
+        </div>
+        <div class="game-screen">
+            <div class="player1">
+              <h2>You <span class="player">0</span></h2>
+              <img src="./img/question.png" class="player-image1" alt="Questionmark">
+            </div>
+            <div class="player2">
+              <h2>Computer <span class="computer">0</span></h2>
+              <img src="./img/question.png" class="player-image2" alt="Questionmark">
+            </div>
+            <button id="clear" class="reset">Reset</button>
+        </div>
+        <div class="game-results">
+          <h3>Log</h3>
+          <div class="game-result"></div>
+        </div>
+      </div>
+      </div>
+    
+
+  </body>
+</html>

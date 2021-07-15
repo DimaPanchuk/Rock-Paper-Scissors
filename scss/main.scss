@@ -1,0 +1,110 @@
+@import './variables.scss';
+
+
+body {
+    background-color: $body-bg;
+    color: $main-font;
+    font-family: monospace; }  
+
+.game {
+    text-align: center; 
+
+    &-greeting {
+        box-shadow: $shadow-main;
+        background-color: $bg-primary;
+        width: 30%;
+        height: 150px;
+        margin: 0 auto; 
+
+        h1 {
+            margin: 5px;
+            font-size: 2rem;
+        }
+        p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        p:last-child {
+            margin-top: 10px;
+        font-size: 1.25rem;
+        }
+    }
+
+    &-wrapper {
+        @include flex;
+        justify-content: space-around;
+        padding-top: 20px;
+
+        .game-field {
+            @include flex;
+            flex-direction: column;
+            box-shadow: $shadow-main;
+            background-color: $bg-primary;
+            width: 200px;
+            margin-left: 10%;
+
+                input {
+                    width: 80%;
+                    box-sizing: content-box;
+                    margin-bottom: 15px;
+                    padding: 5px
+                }
+        }
+
+        .game-screen {
+            @include flex;
+            justify-content: space-around;
+            box-shadow: $shadow-main;
+            background-color: $bg-primary;
+            width: 30%;
+            height: 250px;
+            position: relative; 
+
+            .player1, .player2 {
+                margin-right: 10px;
+
+                h2 {
+                    margin: 0;
+                }
+                span {
+                    font-size: 2rem;
+                }
+                img {
+                    width: 150px;
+                    height: 150px;
+                    margin-top: 7%;
+                }
+
+            }
+
+            .player1 {
+                color: #6d6dff;
+            }
+
+            .player2 {
+                color: #f55757;
+            }
+
+            .reset {
+                box-shadow: $shadow-main;
+                background-color: $bg-secondary;
+                color: $main-font;
+                width: 200px;
+                height: 50px;
+                position: absolute;
+                bottom: -150px;
+                border: none;
+                font-size: 1.2rem;
+                font-family: monospace; 
+            }
+        }
+    }
+    &-results {
+        box-shadow: $shadow-main;
+        background-color: $bg-primary;
+        width: 350px;
+        height: 450px;
+        padding: 10px;
+        font-size: 1.2rem;
+        overflow-y: auto; }
+}

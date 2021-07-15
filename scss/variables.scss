@@ -1,0 +1,10 @@
+$body-bg: #D7FCD4;
+$main-font: #3b3939;
+$bg-primary: #B6CCA1;
+$bg-secondary: #B68F40;
+$shadow-main: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
